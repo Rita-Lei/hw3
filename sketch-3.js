@@ -3,15 +3,9 @@ function setup() {
 } 
 
 function draw() { 
-  background(220);
-
-var doubles = function(){
-
-for(var x = 0; x <= 400; x = x + 10){
-  for(var y = 10; y <=400; y = y + 10){
-   line(x,0,x,y); 
-  }
+  background(255);
+  
+for (var x = 0; x <= 400; x = x + 10){
+  line(x,0,x,x+10);
 }
-}
-doubles();
 }
