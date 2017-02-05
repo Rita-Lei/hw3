@@ -4,12 +4,8 @@ function setup() {
 
 function draw() { 
   background(220);
-
-var circle = function(){
-
-for(var total = 40; total > 0; total--){
-  ellipse(200,200,total*10,total*10);
+for (var d = 10; d <= 400; d = d + 10){
+  ellipse(200,200,d,d);
+  noFill();
 }
-}  
-circle();
 }
