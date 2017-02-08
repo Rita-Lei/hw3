@@ -4,9 +4,8 @@ function setup() {
 
 function draw() { 
   background(255);
-  for(var y = 0; y <= height; y += 10) {
-    for(var x = 0; x <= width; x +=10) {
-   line(x,y,x,y); 
-    }
+  for(var x = 0; x <= width/2; x +=10) {
+   line(x,200+x,400-x,200+x);
+   line(x,200-x,400-x,200-x);
   }
 }
